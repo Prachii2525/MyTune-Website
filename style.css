@@ -1,93 +1,143 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 300;
     line-height: 1.4;
+    scrollbar-width: none;
     scroll-behavior: smooth;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: auto;
 }
-header{
-    background-color: purple;
+
+header {
+    background: linear-gradient(135deg, #2c3e50, #4c669f); /* Gradient background */
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 5px 5px 5px rgba(0,0,0,5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     color: white;
     align-items: center;
     padding: 20px 0;
 }
-nav ul{
+
+nav ul {
     display: flex;
     gap: 20px;
 }
-.logo{
+
+.logo {
     font-size: 32px;
     font-weight: 600;
 }
-button{
-   padding: 10px 15px; 
-   border: none;
-   transition: 0.2s ease-in-out;
+
+button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
 }
-button:hover{
+
+button:hover {
     opacity: 0.8;
-    transition: 0.2 ease-in-out;
+    transition: 0.2s ease-in-out;
 }
-nav ul li:hover{
+
+nav ul li:hover {
     border-bottom: 2px solid transparent;
     transition: 0.2s ease-in;
 }
+
 nav ul li:hover {
     border-bottom: 2px solid white;
     transition: 0.2s ease-in;
-
 }
 
-.hero-section{
-    background-image: url(images/images.jpeg);
-    
-    height:100vh;
+.hero-section {
+    height: 100vh;
     display: grid;
-    color: white;
+    color: #f0f0f0; /* Light grey text color */
+    background-image: url(./images/bgImage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     place-items: center;
     text-align: center;
-
+    position: relative; /* For overlay positioning */
+    padding: 20px;
 }
-.hero-section .container{
-    display:flex;
+
+/* Add a semi-transparent overlay */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Place it below the text */
+}
+
+.hero-section .container {
+    display: flex;
     flex-direction: column;
     gap: 30px;
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 2; /* Ensure text is above the overlay */
 }
-.hero-section h1{
-    font-size:96px;
+
+.hero-section h1 {
+    font-size: 72px; /* Smaller font size for better fit */
+    color: #fff; /* White text color */
 }
-.hero-section h3{
-    font-size: 32px;
+
+.hero-section h3 {
+    font-size: 28px; /* Adjusted font size */
+    color: #ddd; /* Light grey text color */
 }
-.Music-section{
-    padding-top: 50px;
-    background-color: rgba(128, 0, 128, 0.564);
+
+.hero-section p {
+    font-size: 18px; /* Adjusted font size */
+    font-weight: 300;
+    color: #ddd; /* Light grey text color */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the paragraph */
 }
-.Music-section .container{
+
+.Music-section {
+    padding: 50px 20px; /* Added padding for all sides */
+    background: linear-gradient(135deg, #4c669f, #192f6a); /* Gradient background */
+    text-align: center; /* Center text and elements */
+} 
+.Music-section h2{
+    font-size: 48px; /* Adjusted font size */
+    color: #fff; /* White text color */
+    
+}
+
+.Music-section .container {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -95,17 +145,24 @@ nav ul li:hover {
     align-items: center;
     color: white;
 }
-.ipad-iphone-img{
-    margin-top: -400px;
-    position: relative;
-    top:400px;
-    /* max-height: 100px; */
+
+.ipad-iphone-img {
+    max-width: 100%; /* Ensure image does not overflow container */
+    max-height: 400px; /* Set maximum height for the image */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure image is displayed as a block element */
+    position: relative; /* Adjust top position */
 }
-.primary-btn{
+
+.primary-btn {
     background-color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
 }
-.secondary-btn{
+
+.secondary-btn {
     background-color: blue;
     color: white;
 }
