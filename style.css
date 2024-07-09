@@ -43,6 +43,15 @@ nav ul{
     font-size: 32px;
     font-weight: 600;
 }
+button{
+   padding: 10px 15px; 
+   border: none;
+   transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2 ease-in-out;
+}
 nav ul li:hover{
     border-bottom: 2px solid transparent;
     transition: 0.2s ease-in;
@@ -54,8 +63,8 @@ nav ul li:hover {
 }
 
 .hero-section{
-    background-image: url(images/XZynU1.jpg);
-    object-position: ;
+    background-image: url(images/images.jpeg);
+    
     height:100vh;
     display: grid;
     color: white;
@@ -73,4 +82,30 @@ nav ul li:hover {
 }
 .hero-section h3{
     font-size: 32px;
+}
+.Music-section{
+    padding-top: 50px;
+    background-color: rgba(128, 0, 128, 0.564);
+}
+.Music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.ipad-iphone-img{
+    margin-top: -400px;
+    position: relative;
+    top:400px;
+    /* max-height: 100px; */
+}
+.primary-btn{
+    background-color: brown;
+    color: white;
+}
+.secondary-btn{
+    background-color: blue;
+    color: white;
 }
