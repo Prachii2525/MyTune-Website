@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(135deg, #2c3e50, #4c669f);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+.content h3,
+.content p {
+    margin-top: 20px;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 80%;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+/* Music Section */
+.Music-section {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #4c669f, #192f6a);
+    text-align: center;
+}
+
+.Music-section h2 {
+    font-size: 48px;
+    color: #fff;
+}
+
+.Music-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ipad-iphone-img {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ipad-iphone-img img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.primary-btn {
+    background-color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    border-radius: 40px;
+}
+
+.secondary-btn {
+    background-color: blue;
+    color: white;
+}
+
+.playlist-section {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .ipad-iphone-img img {
+        max-height: 200px;
+    }
+}
+
+.playlist-creation input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#playlist {
+    list-style-type: none;
+    padding: 0;
+}
+
+#playlist li {
+    background-color: #ddd;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.about-music {
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Video Section */
+.video-section {
+    background-image: url(images/video-img.jpg);
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+}
+
+.video-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Gift Section */
+.gift-section {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+
+.gift-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .primary-btn,
+.dark-mode .secondary-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Playlist Styling */
+.playlist-creation {
+    margin-top: 20px;
+}
+
+#playlist-container {
+    margin-top: 10px;
+}
+
+.playlist-item {
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-top: 5px;
+    border-radius: 5px;
+}

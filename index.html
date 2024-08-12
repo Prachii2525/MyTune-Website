@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myTune website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">myTune</div>
+            <ul>
+                <li><a href="#hero">Overview</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#gift">Gift Card</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="video-background">
+                <video autoplay muted loop>
+                    <source src="./videos/bg.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="content container">
+                <h3>Your Music, Movies, and TV shows take center stage.</h3>
+                <p>This is the best way to organize and enjoy the Music, Movies, and TV shows you already have - and
+                    shop for the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac or PC.</p>
+            </div>
+        </section>
+
+        <section class="Music-section" id="music">
+            <div class="container">
+                <h2><span><i class="fa fa-music"></i></span> MUSIC</h2>
+                <h4>Stream over 45 million songs from every genre imaginable. From the latest chart-toppers to timeless
+                    classics, we have it all.</h4>
+                <button class="primary-btn">Start Your Trial Now</button>
+                <p>Orange Music is available in myTunes, and for iOS and Android devices.</p>
+                <div class="ipad-iphone-img">
+                    <img src="images/ipad-image.png" alt="iPad and iPhone">
+                </div>
+            </div>
+        </section>
+
+        <section class="playlist-section container">
+            <h3>Create and Manage Your Playlist</h3>
+            <div class="playlist-creation">
+                <input type="text" id="song-name" placeholder="Enter Song Name">
+                <button id="add-song-btn" class="primary-btn">Add to Playlist</button>
+            </div>
+            <div id="playlist-container">
+                <h4>Your Playlist</h4>
+                <ul id="playlist"></ul>
+            </div>
+        </section>
+
+        <section class="about-music container">
+            <h3>The movies and TV collection you always wished for. Granted.</h3>
+            <h4>With over 10,000 movies and TV shows, including a wide variety of genres like pop, rock, classical,
+                jazz, electronic, hip-hop, and more. Offer music from various cultures and languages to attract a global
+                audience. High-Quality Audio: Ensure all tracks are available in high-quality formats.</h4>
+            <button class="secondary-btn">Read More</button>
+            <div class="mac-img">
+                <img src="images/mac-img.jpg" alt="Macbook">
+            </div>
+        </section>
+
+        <section class="video-section" id="video">
+            <div class="container">
+                <h3>Latest Music Releases</h3>
+                <p>Explore the latest music releases, trending songs, albums, and artists. Enjoy curated playlists by
+                    experts, celebrities, and influencers.</p>
+            </div>
+        </section>
+
+        <section class="gift-section container" id="gift">
+            <div class="gift-content">
+                <h3>Give the gift of myTunes.</h3>
+                <h4>You can send it over email or print it out. And in any amount. Get one for your loved ones, and
+                    they’ll be able to choose exactly what they want.</h4>
+            </div>
+            <div class="gift-image">
+                <img src="images/gift-card.jpg" alt="Gift Card">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
