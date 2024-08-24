@@ -125,8 +125,9 @@ nav ul li:hover {
 
 /* Music Section */
 .Music-section {
+    /* margin-top: 20px; */
     padding: 50px 20px;
-    background: linear-gradient(135deg, #4c669f, #192f6a);
+    background: linear-gradient(135deg, #9f4c8182, #6a1965bd);
     text-align: center;
 }
 
@@ -165,12 +166,16 @@ nav ul li:hover {
 }
 
 .secondary-btn {
+
     background-color: blue;
     color: white;
 }
 
 .playlist-section {
-    margin-top: 40px;
+    padding: 50px 20px;
+    /* margin-top: 40px; */
+    background-color: khaki;
+   
 }
 
 @media (max-width: 768px) {
